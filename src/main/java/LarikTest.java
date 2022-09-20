@@ -1,3 +1,4 @@
+/*
 import java.util.Arrays;
 
 public class LarikTest {
@@ -19,13 +20,17 @@ public class LarikTest {
         System.out.println("Interpolation: " + Larik.interpolationSearch(array, key));
 
         Larik.cetak(array2);
-        /*System.out.println("\n\nSelection:");
+        */
+/*System.out.println("\n\nSelection:");
         Larik.selectionSort(array2);
-        Larik.cetak(array2);*/
+        Larik.cetak(array2);*//*
 
-        /*System.out.println("\n\nBubble:");
+
+        */
+/*System.out.println("\n\nBubble:");
         Larik.bubbleSort(array2, false);
-        Larik.cetak(array2);*/
+        Larik.cetak(array2);*//*
+
 
         System.out.println("\n\nSelection: ");
         long startTime = System.nanoTime();
@@ -34,4 +39,4 @@ public class LarikTest {
         System.out.println((endTime - startTime));
         Larik.cetak(array2);
     }
-}
+}*/

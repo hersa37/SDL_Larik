@@ -96,15 +96,15 @@ public class Larik {
         return true;
     }
 
-    public static void selectionSort(int[] array, boolean ascending) {
+    public static void selectionSort(int[] array, boolean isAscending) {
 
         int factor = 1;
-        if (!ascending) factor = -1;
+        if (!isAscending) factor = -1;
 
         for (int i = 0; i < array.length - 1; i++) {
             int mIndex = i;
             for (int j = i + 1; j < array.length; j++) {
-                if (array[j] * factor < array[mIndex] * factor) {
+                if ((array[j] * factor) < (array[mIndex] * factor)) {
                     mIndex = j;
                 }
             }
@@ -112,25 +112,46 @@ public class Larik {
         }
     }
 
-    public static void bubbleSort(int[] array, boolean ascending) {
+    public static void bubbleSort(int[] array, boolean isAscending) {
 
         int factor = 1;
-        if(!ascending) factor = -1;
+        if(!isAscending) factor = -1;
 
-        for (int i = array.length - 1; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
+        for (int i = 1; i < array.length ; i++) {
+            for (int j = 0; j < array.length - i; j++) {
                 if (array[j] * factor > array[j + 1] * factor) {
                     swap(array, j, j + 1);
                 }
             }
         }
-
     }
 
     public static void swap(int[] array, int firstIndex, int secondIndex) {
         int temp = array[firstIndex];
         array[firstIndex] = array[secondIndex];
         array[secondIndex] = temp;
+    }
+
+    public static void bubbleComplex(int[] array, boolean isAscending) {
+        int factor = 1;
+        if(!isAscending) factor = -1;
+
+        for (int i = 1; i < array.length ; i++) {
+            System.out.println("Iterasi " + i);
+            System.out.printf("%5s | %5s | %6s | %6s%n", "Count", "Key", "Compare", "Tukar");
+            for (int j = 0; j < array.length - i; j++) {
+                System.out.printf("%5s | %5d | %6d ", j + 1, array[j], array[j + 1]);
+                if (array[j] * factor > array[j + 1] * factor) {
+                    swap(array, j, j + 1);
+                    System.out.printf(" | %6s%n", "Ya");
+                } else {System.out.printf(" | %6s%n", "Tidak");}
+            }
+            System.out.print("Array di akhir iterasi : " );
+            for(int each : array) {
+                System.out.print(each + " ");
+            }
+            System.out.println("\n");
+        }
     }
 
 }

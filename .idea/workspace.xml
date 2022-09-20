@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5499930e-0917-4246-b25e-1dfd1057db5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Figure/F713.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Figure/F72.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Figure/F73.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Figure/F74.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Figure/F75.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Larik.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LarikTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Try.java" afterDir="false" />
+    <list default="true" id="5499930e-0917-4246-b25e-1dfd1057db5c" name="Changes" comment="Init">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SDL_W04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Larik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Larik.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LarikTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LarikTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +46,23 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.LarikTest">
+  <component name="RunManager" selected="Application.Main2">
     <configuration name="LarikTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LarikTest" />
+      <module name="SDL_W01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main2" />
+      <module name="SDL_W01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SDL_W04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SDL_W04" />
       <module name="SDL_W01" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -71,6 +77,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main2" />
+        <item itemvalue="Application.SDL_W04" />
         <item itemvalue="Application.LarikTest" />
         <item itemvalue="Application.Try" />
       </list>
@@ -98,7 +106,18 @@
       <workItem from="1663388572764" duration="473000" />
       <workItem from="1663545223148" duration="7449000" />
       <workItem from="1663632158584" duration="2170000" />
+      <workItem from="1663635728797" duration="12293000" />
+      <workItem from="1663674552660" duration="1878000" />
+      <workItem from="1663680325028" duration="3276000" />
     </task>
+    <task id="LOCAL-00001" summary="Init">
+      <created>1663635803906</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663635803906</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,5 +136,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init" />
   </component>
 </project>
