@@ -2,11 +2,16 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Larik {
+
     public static void cetak(int[] array) {
-        System.out.printf("%s%8s\n", "Index", "Value");
-        for (int index = 0; index < array.length; index++) {
-            System.out.printf("%5d%8d\n", index, array[index]);
+        String index = "Index :";
+        String value = "Value :";
+        for (int i = 0; i < array.length; i++) {
+            index += String.format(" %4d", i);
+            value += String.format(" %4d", array[i]);
         }
+        System.out.println(index);
+        System.out.println(value);
     }
 
     public static int sequentialSearch(int[] array, int key) {
@@ -115,9 +120,9 @@ public class Larik {
     public static void bubbleSort(int[] array, boolean isAscending) {
 
         int factor = 1;
-        if(!isAscending) factor = -1;
+        if (!isAscending) factor = -1;
 
-        for (int i = 1; i < array.length ; i++) {
+        for (int i = 1; i < array.length; i++) {
             for (int j = 0; j < array.length - i; j++) {
                 if (array[j] * factor > array[j + 1] * factor) {
                     swap(array, j, j + 1);
@@ -134,24 +139,75 @@ public class Larik {
 
     public static void bubbleComplex(int[] array, boolean isAscending) {
         int factor = 1;
-        if(!isAscending) factor = -1;
-
-        for (int i = 1; i < array.length ; i++) {
+        if (!isAscending) factor = -1;
+        int tukar = 0;
+        int compare = 0;
+        System.out.println("-----------------------------------------------");
+        for (int i = 1; i < array.length; i++) {
             System.out.println("Iterasi " + i);
             System.out.printf("%5s | %5s | %6s | %6s%n", "Count", "Key", "Compare", "Tukar");
             for (int j = 0; j < array.length - i; j++) {
                 System.out.printf("%5s | %5d | %6d ", j + 1, array[j], array[j + 1]);
+                compare++;
                 if (array[j] * factor > array[j + 1] * factor) {
                     swap(array, j, j + 1);
+                    tukar++;
                     System.out.printf(" | %6s%n", "Ya");
-                } else {System.out.printf(" | %6s%n", "Tidak");}
+                } else {
+                    System.out.printf(" | %6s%n", "Tidak");
+                }
             }
-            System.out.print("Array di akhir iterasi : " );
-            for(int each : array) {
+            System.out.print("Array di akhir iterasi : ");
+            for (int each : array) {
                 System.out.print(each + " ");
             }
             System.out.println("\n");
         }
+        System.out.println("Tukar total = " + tukar);
+        System.out.println("Banding total = " + compare);
+        System.out.println("-----------------------------------------------");
+    }
+
+    public static void selectionComplex(int[] array, boolean isAscending) {
+        int factor = 1;
+        String m = "Min";
+        int compare = 0;
+        int switching = 0;
+
+        if (!isAscending) {
+            factor = -1;
+            m = "Max";
+        }
+        System.out.println("-----------------------------------------------");
+
+        for (int i = 0; i < array.length - 1; i++) {
+            int mIndex = i;
+            int count = 1;
+
+            System.out.println("Iterasi " + (i + 1));
+            System.out.printf("%5s | %5s | %6s | %6s%n", "Count", "Key", "Compare", m);
+            for (int j = i + 1; j < array.length; j++) {
+                System.out.printf("%5s | %5d | %6d ", count++, array[mIndex], array[j]);
+                compare++;
+                System.out.printf(" | %6d%n", mIndex);
+                if ((array[j] * factor) < (array[mIndex] * factor)) {
+                    mIndex = j;
+                }
+
+            }
+            System.out.println("Index " + i + " ditukar dengan index " + mIndex);
+            swap(array, mIndex, i);
+            switching++;
+            System.out.print("Array di akhir iterasi : ");
+            for (int each : array) {
+                System.out.print(each + " ");
+            }
+            System.out.println("\n");
+        }
+        System.out.println("Banding total\t: " + compare);
+        System.out.println("Tukar total\t\t: " + switching);
+
+        System.out.println("-----------------------------------------------");
     }
 
 }
