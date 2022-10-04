@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+
+class Larik{
+
++{static} cetak(array : int[]) : void
++{static} sequentialSearch(array : int[])
++{static} binarySearch(array : int[])) : void
++{static} interpolationSearch((array : int[]) : void
++{static} bubbleSort(array : int[], isAscending : boolean) : void
++{static} selectionSort(array : int[], isAscending :boolean) :void
++{static} insertionSort(array : int [], isAscending : boolean) : void
+
+}
+note left of Larik:
+
+@enduml

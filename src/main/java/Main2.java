@@ -1,3 +1,5 @@
+import larik.Larik;
+
 import java.util.Arrays;
 
 public class Main2 {
@@ -70,8 +72,14 @@ public class Main2 {
         System.out.println("\nSelection descend");
         Larik.selectionComplex(Arrays.copyOf(baseArray, baseArray.length), false);
 
+//        System.out.println("\nInsertion");
+//        int[] nArray = Arrays.copyOf(baseArray, baseArray.length);
+//        larik.Larik.cetak(nArray);
+//        larik.Larik.insertionSort(nArray, false);
+//        larik.Larik.cetak(nArray);
 
-        //Bubble big array
+
+        /*//Bubble big array
         //Ascending
         Thread first = new Thread(() -> {
             bigBArrayAsc();
@@ -92,9 +100,7 @@ public class Main2 {
         Thread fourth = new Thread(() -> {
             bigSArrayDesc();
         });
-
         first.start();
-        ;
         second.start();
         third.start();
         fourth.start();
@@ -104,26 +110,26 @@ public class Main2 {
         third.join();
         fourth.join();
 
-        timeSArrayAsc = 1013400245;
         //Print time
         //Bubble
         String numberFormat = "%n%5s| %15.5f | %15.5f | %15.5f | %15.5f | %15.5f |";
         System.out.println("\nBubble sort");
         System.out.printf("%5s| %15s | %15s | %15s | %15s | %15S |", "", "1K", "10K", "100K", "1M", "10M");
+
         System.out.printf(numberFormat, "Asc", timeBArray1KAsc, timeBArray10KAsc,
                 timeBArray100KAsc, timeBArray1MAsc, timeBArray10MAsc);
         System.out.printf(numberFormat, "Desc", timeBArray1KDesc, timeBArray10KDesc,
                 timeBArray100KDesc, timeBArray1MDesc, timeBArray10MDesc);
 
         //Selection
-        System.out.println("\nSelection sort");
+        System.out.println("\n\nSelection sort");
         System.out.printf("%5s| %15s | %15s | %15s | %15s | %15S |", "", "1K", "10K", "100K", "1M", "10M");
         System.out.printf(numberFormat, "Asc", timeSArray1KAsc, timeSArray10KAsc,
                 timeSArray100KAsc, timeSArray1MAsc, timeSArray10MAsc);
         System.out.printf(numberFormat, "Desc", timeSArray1KDesc, timeSArray10KDesc,
                 timeSArray100KDesc, timeSArray1MDesc, timeSArray10MDesc);
 
-        System.out.println("\n\n");
+        System.out.println("\n\n");*/
 
 
     }
@@ -151,41 +157,62 @@ public class Main2 {
         Larik.selectionSort(tempArray, isAscending);
         long end = System.nanoTime();
         return time(start, end);
+
     }
 
     public static void bigBArrayAsc() {
         boolean asc = true;
         timeBArray1KAsc = bigBArray(Arrays.copyOf(baseArray1K, baseArray1K.length), asc);
+        System.out.println("1k bubble asc done");
         timeBArray10KAsc = bigBArray(Arrays.copyOf(baseArray10K, baseArray10K.length), asc);
+        System.out.println("10k bubble asc done");
         timeBArray100KAsc = bigBArray(Arrays.copyOf(baseArray100k, baseArray100k.length), asc);
+        System.out.println("100k bubble asc done");
         timeBArray1MAsc = bigBArray(Arrays.copyOf(baseArray1M, baseArray1M.length), asc);
-        /*        timeBArray10MAsc = bigBArray(Arrays.copyOf(baseArray10M, baseArray10M.length), asc);*/
+        System.out.println("1m bubble asc done");
+/*        timeBArray10MAsc = bigBArray(Arrays.copyOf(baseArray10M, baseArray10M.length), asc);
+        System.out.println("10m bubble asc done");*/
     }
 
     public static void bigBArrayDesc() {
         boolean asc = false;
         timeBArray1KDesc = bigBArray(Arrays.copyOf(baseArray1K, baseArray1K.length), asc);
+        System.out.println("1k bubble desc done");
         timeBArray10KDesc = bigBArray(Arrays.copyOf(baseArray10K, baseArray10K.length), asc);
+        System.out.println("10k bubble desc done");
         timeBArray100KDesc = bigBArray(Arrays.copyOf(baseArray100k, baseArray100k.length), asc);
-        /*timeBArray1MDesc = bigBArray(Arrays.copyOf(baseArray1M, baseArray1M.length), asc);
-        timeBArray10MDesc = bigBArray(Arrays.copyOf(baseArray10M, baseArray10M.length), asc);*/
+        System.out.println("100k bubble desc done");
+        timeBArray1MDesc = bigBArray(Arrays.copyOf(baseArray1M, baseArray1M.length), asc);
+        System.out.println("1m bubble desc done");
+/*        timeBArray10MDesc = bigBArray(Arrays.copyOf(baseArray10M, baseArray10M.length), asc);
+        System.out.println("10m bubble desc done");*/
     }
 
     public static void bigSArrayAsc() {
         boolean asc = true;
         timeSArray1KAsc = bigSArray(Arrays.copyOf(baseArray1K, baseArray1K.length), asc);
+        System.out.println("1k selection asc done");
         timeSArray10KAsc = bigSArray(Arrays.copyOf(baseArray10K, baseArray10K.length), asc);
+        System.out.println("10k selection asc done");
         timeSArray100KAsc = bigSArray(Arrays.copyOf(baseArray100k, baseArray100k.length), asc);
-        /*timeSArray1MAsc = bigSArray(Arrays.copyOf(baseArray1M, baseArray1M.length), asc);
-        timeSArray10MAsc = bigSArray(Arrays.copyOf(baseArray10M, baseArray10M.length), asc);*/
+        System.out.println("100k selection asc done");
+        timeSArray1MAsc = bigSArray(Arrays.copyOf(baseArray1M, baseArray1M.length), asc);
+        System.out.println("1m selection asc done");
+        /*timeSArray10MAsc = bigSArray(Arrays.copyOf(baseArray10M, baseArray10M.length), asc);
+        System.out.println("10m selection asc done");*/
     }
 
     public static void bigSArrayDesc() {
         boolean asc = false;
         timeSArray1KDesc = bigSArray(Arrays.copyOf(baseArray1K, baseArray1K.length), asc);
+        System.out.println("1k selection desc done");
         timeSArray10KDesc = bigSArray(Arrays.copyOf(baseArray10K, baseArray10K.length), asc);
+        System.out.println("10k selection desc done");
         timeSArray100KDesc = bigSArray(Arrays.copyOf(baseArray100k, baseArray100k.length), asc);
-        /*timeSArray1MDesc = bigSArray(Arrays.copyOf(baseArray1M, baseArray1M.length), asc);
-        timeSArray10MDesc = bigSArray(Arrays.copyOf(baseArray10M, baseArray10M.length), asc);*/
+        System.out.println("100k selection desc done");
+        timeSArray1MDesc = bigSArray(Arrays.copyOf(baseArray1M, baseArray1M.length), asc);
+        System.out.println("1m selection desc done");
+        /*timeSArray10MDesc = bigSArray(Arrays.copyOf(baseArray10M, baseArray10M.length), asc);
+        System.out.println("10m selection desc done");*/
     }
 }

@@ -9,17 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5499930e-0917-4246-b25e-1dfd1057db5c" name="Changes" comment="Init">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SDL_W01_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+    <list default="true" id="5499930e-0917-4246-b25e-1dfd1057db5c" name="Changes" comment="Revised main&#10;Added .jar">
+      <change afterPath="$PROJECT_DIR$/src/Larik.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MainW06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Larik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Larik.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LarikTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SDL_W01_jar/SDL_W01.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SDL_W01_jar/SDL_W01.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Larik.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SDL_W04.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Try.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="UML Class" />
+        <option value="UML Activity" />
         <option value="Class" />
       </list>
     </option>
@@ -42,6 +41,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2ELmEHawsoq8IyrQbjZZExf3P8U" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,22 +56,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Activity&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/echa/College/Semester 3/StrukturDataLinear/Week01/SDL_W01&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Main2">
+}</component>
+  <component name="RunManager" selected="Application.MainW06">
     <configuration name="LarikTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LarikTest" />
       <module name="SDL_W01" />
@@ -75,6 +84,13 @@
     </configuration>
     <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main2" />
+      <module name="SDL_W01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainW06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainW06" />
       <module name="SDL_W01" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -96,6 +112,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainW06" />
         <item itemvalue="Application.Main2" />
         <item itemvalue="Application.SDL_W04" />
         <item itemvalue="Application.LarikTest" />
@@ -129,6 +146,34 @@
       <workItem from="1663674552660" duration="1878000" />
       <workItem from="1663680325028" duration="15588000" />
       <workItem from="1663737886850" duration="2419000" />
+      <workItem from="1663753885569" duration="4353000" />
+      <workItem from="1663807419989" duration="764000" />
+      <workItem from="1663824592115" duration="44000" />
+      <workItem from="1663824669983" duration="186000" />
+      <workItem from="1663824980334" duration="116000" />
+      <workItem from="1663833782115" duration="1160000" />
+      <workItem from="1663894238710" duration="236000" />
+      <workItem from="1663896665842" duration="2332000" />
+      <workItem from="1663995736459" duration="10000" />
+      <workItem from="1663996346321" duration="671000" />
+      <workItem from="1664009096268" duration="593000" />
+      <workItem from="1664110079137" duration="626000" />
+      <workItem from="1664149464862" duration="9635000" />
+      <workItem from="1664184061857" duration="817000" />
+      <workItem from="1664191703952" duration="2111000" />
+      <workItem from="1664261569775" duration="194000" />
+      <workItem from="1664411842381" duration="121000" />
+      <workItem from="1664759190239" duration="3422000" />
+      <workItem from="1664844576251" duration="206000" />
+      <workItem from="1664846054744" duration="34000" />
+      <workItem from="1664846393295" duration="493000" />
+      <workItem from="1664862103947" duration="3317000" />
+      <workItem from="1664865919019" duration="292000" />
+      <workItem from="1664867273252" duration="153000" />
+      <workItem from="1664867612705" duration="36000" />
+      <workItem from="1664867798688" duration="18000" />
+      <workItem from="1664868130313" duration="51000" />
+      <workItem from="1664869209991" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1663635803906</created>
@@ -144,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663683611759</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Revised main&#10;Added .jar">
+      <created>1663753996232</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663753996233</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +216,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="Revised main&#10;Added .jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revised main&#10;Added .jar" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
