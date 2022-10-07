@@ -10,13 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5499930e-0917-4246-b25e-1dfd1057db5c" name="Changes" comment="Revised main&#10;Added .jar">
-      <change afterPath="$PROJECT_DIR$/src/Larik.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MainW06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SDL_W01_jar/SDL_W01.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SDL_W01_jar/SDL_W01.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Larik.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainW06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainW06.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +170,7 @@
       <workItem from="1664867798688" duration="18000" />
       <workItem from="1664868130313" duration="51000" />
       <workItem from="1664869209991" duration="14000" />
+      <workItem from="1665023286203" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1663635803906</created>

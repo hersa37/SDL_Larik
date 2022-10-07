@@ -1,4 +1,4 @@
-import larik.Larik;
+import echa.larik.Larik;
 
 import java.util.Arrays;
 
