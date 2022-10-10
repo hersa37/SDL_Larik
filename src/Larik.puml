@@ -12,8 +12,15 @@ class Larik{
 +{static} bubbleSort(array : int[], isAscending : boolean) : void
 +{static} selectionSort(array : int[], isAscending :boolean) :void
 +{static} insertionSort(array : int [], isAscending : boolean) : void
++{static} quickSort(array : int[]) : void
+-{static} quickSort(array : int[], lowIndex : int, highIndex : int) : void
++{static} swap(array : int[], firstIndex : int, secondIndex : int) :void
++{static} mergeSort(array : int[]) : void
+-{static} mergeSort(array : int[], auxArray : int[],  lowIndex : int, highIndex :int) : void
+-{static} mergeArrays(array : int[], auxArray : int[], lowIndex : int, mid : int, highIndex : int) : void
+
+
 
 }
-note left of Larik:
 
 @enduml
