@@ -348,41 +348,43 @@ public class Larik {
 	}
 
 	public static void mergeSort(int[] array) {
-		mergeSort(array, Arrays.copyOf(array, array.length), 0, array.length - 1);
+		mergeSort(array, array.clone(), 0, array.length - 1);
 	}
 
-	private static void mergeSort(int[] array, int[] auxArray, int lowIndex, int highIndex) {
-		if (highIndex <= lowIndex +10) {
-			insertionSort(array, lowIndex, highIndex);
+	private static void mergeSort(int[] array, int[] destArray, int lowIndex, int highIndex) {
+		if (highIndex <= lowIndex) {
+//			insertionSort(array, lowIndex, highIndex);
 			return;
 		}
 		int mid = (highIndex + lowIndex) / 2;
 
-		mergeSort(auxArray, array, lowIndex, mid);
-		mergeSort(auxArray, array, mid + 1, highIndex);
-
-		mergeArrays(auxArray, array, lowIndex, mid, highIndex);
+		mergeSort(destArray, array, lowIndex, mid);
+		mergeSort(destArray, array, mid + 1, highIndex);
+		if(array[mid] <= array[mid + 1]) {
+			System.arraycopy(destArray, lowIndex, array, lowIndex, highIndex - lowIndex + 1);
+		}
+		mergeArrays(destArray, array, lowIndex, mid, highIndex);
 	}
 
-	private static void mergeArrays(int[] array, int[] auxArray, int lowIndex, int mid, int highIndex) {
+	private static void mergeArrays(int[] array, int[] destArray, int lowIndex, int mid, int highIndex) {
 
 		int i = lowIndex;
 		int j = mid + 1;
 		for (int x = lowIndex; x <= highIndex; x++) {
 			if (i > mid) {
-				auxArray[x] = array[j++];
+				destArray[x] = array[j++];
 			} else if (j > highIndex) {
-				auxArray[x] = array[i++];
+				destArray[x] = array[i++];
 			} else if (array[j] < array[i]) {
-				auxArray[x] = array[j++];
+				destArray[x] = array[j++];
 			} else {
-				auxArray[x] = array[i++];
+				destArray[x] = array[i++];
 			}
 		}
 	}
 
-	public static void insertionSort(int[] array, int lowIndex, int highIndex) {
-		for (int i = lowIndex; i < highIndex; i++) {
+	private static void insertionSort(int[] array, int lowIndex, int highIndex) {
+		for (int i = lowIndex + 1; i <= highIndex; i++) {
 			int key = array[i];
 			int j = i - 1;
 			while (j >= 0 && ((key) < (array[j]))) {
