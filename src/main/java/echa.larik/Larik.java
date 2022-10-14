@@ -159,6 +159,7 @@ public class Larik {
 					System.out.printf(" | %6s%n", "Tidak");
 				}
 			}
+
 			System.out.print("Array di akhir iterasi : ");
 			for (int each : array) {
 				System.out.print(each + " ");
@@ -195,7 +196,6 @@ public class Larik {
 				if ((array[j] * factor) < (array[mIndex] * factor)) {
 					mIndex = j;
 				}
-
 			}
 			System.out.println("Index " + i + " ditukar dengan index " + mIndex);
 			swap(array, mIndex, i);
@@ -229,12 +229,9 @@ public class Larik {
 				if ((array[j] * factor) < (array[mIndex] * factor)) {
 					mIndex = j;
 				}
-
 			}
 			swap(array, mIndex, i);
-
 		}
-
 	}
 
 	public static void insertionSort(int[] array, boolean isAscending) {
